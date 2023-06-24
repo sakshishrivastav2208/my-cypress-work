@@ -36,3 +36,13 @@ it("test case 4-click on store link and visit store page", () => {
     expect(win.top).not.to.equal(win.parent);
   });
 });
+
+it("testing1", () => {
+  cy.visit(
+    "https://blockstream.info/block/0000000000000000000205b507ca7da4ba6b368997f39da29da35c59e0688e9f"
+  );
+  cy.get("h3").should("have.title", "25 of 3233 Transactions");
+  cy.get(".transaction-box").find(
+    "aa0261e88a83e4c9785aa06aa18827c7058ee7f4098388545dac2a08a426251c"
+  );
+});
