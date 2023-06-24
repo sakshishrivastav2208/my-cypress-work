@@ -12,7 +12,7 @@ it("use of navigation of browser-validation with title and headings", () => {
   cy.reload();
 });
 
-it.only("use of navigation of browser-validations with url", () => {
+it("use of navigation of browser-validations with url", () => {
   cy.visit("https://www.qaclickacademy.com/");
   cy.title().should(
     "eq",
