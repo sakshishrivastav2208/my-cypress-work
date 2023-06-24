@@ -1,6 +1,6 @@
 it(" use of trim", () => {
   let text = "       Hello World!        ";
-  let result = text.trim();
+  let result = text.trim(); //use of trim
   cy.log(result);
 });
 
