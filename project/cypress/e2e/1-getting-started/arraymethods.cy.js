@@ -49,14 +49,14 @@ it(" use of Array.from method ", () => {
   console.log(mynewarray);
 });
 
-it.only("for of loop use", () => {
+it("for of loop use", () => {
   const myarray = [1, 2, 3, 6, 0, 1, 2];
   for (let i of myarray) {
     cy.log(i); //for printing or access each element of array
   }
 });
 
-it.only("for in loop use", () => {
+it("for in loop use", () => {
   const myarray = [1, 2, 3, 6, 0, 1, 2];
   for (let i in myarray) {
     cy.log(i); //for printing or access each key of array

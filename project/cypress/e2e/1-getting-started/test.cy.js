@@ -1,4 +1,4 @@
-beforeEach("testing", () => {
+beforeEach("testing and one task", () => {
   cy.visit("https://owasp.org/www-project-juice-shop/");
   cy.contains("OWASP Juice Shop");
 });
