@@ -1,4 +1,4 @@
-it("stringmethod1", () => {
+it("Stringmethod1", () => {
   let stringmy = "SaKsHi";
   let mynewString = stringmy.toLowerCase();
   cy.log(mynewString);

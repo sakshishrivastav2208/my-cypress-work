@@ -21,7 +21,7 @@ it("use of navigation of browser-validations with url", () => {
   cy.get(".navbar-nav > :nth-child(4) > a").click();
   cy.reload();
   cy.url().should("includes", "/about.html");
-  cy.go("back");
+  cy.go("back"); //navigation through browser
   cy.reload();
   cy.url().should("includes", "https://www.qaclickacademy.com/");
   cy.go("forward");
